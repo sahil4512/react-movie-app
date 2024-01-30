@@ -115,7 +115,6 @@ body {
   white-space: nowrap;
   width: 204px;
   overflow: hidden;
-  text-overflow: ellipsis;
   text-align: center;
   padding: 10px;
 }
