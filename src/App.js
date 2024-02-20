@@ -16,14 +16,38 @@ const App = () => {
 
   useEffect(() => {
     searchMovies("");
-  }, []);
+  }, [setMovies]);
 
   return (
     <div className="app">
-      <div className="sidebar"></div>
-
-      <h1>React Movie App</h1>
-
+      <div className="sidebar">
+        <h1 className="side_bar_title">React Movie App</h1>
+        <ul>
+          <li className="sidebtn">
+            <a className="active" href="#">
+              Geners
+            </a>
+          </li>
+          <li className="sidebtn">
+            <a href="#">Trending</a>
+          </li>
+          <li className="sidebtn">
+            <a href="#">Upcoming</a>
+          </li>
+          <li className="sidebtn">
+            <a href="#">Favorites</a>
+          </li>
+        </ul>
+        <div className="creator_git_tag">
+          <ul>
+            <li>
+              <a href="#" target="_blank">
+                Github
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
       <div className="searchbar">
         <input
           className="search_bar"
@@ -37,7 +61,7 @@ const App = () => {
           className="search__button"
           onClick={(e) => searchMovies(searchTerm)}
         >
-          Search&nbsp;
+          Search&nbsp;&nbsp;
           <i className="fas fa-search"></i>
         </button>
       </div>
