@@ -169,8 +169,11 @@ body {
 }
 
 .error h2 {
-  color: #fff;
-  padding: 20px;
+  display: flex;
+  color: #111;
+  margin-left: 250px;
+  justify-content: center;
+  align-items: center;
 }
 
 .title {
