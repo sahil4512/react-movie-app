@@ -20,38 +20,6 @@ const App = () => {
 
   return (
     <div className="app">
-      <div className="sidebar">
-        <h1 className="side_bar_title">React Movie App</h1>
-        <ul>
-          <li className="sidebtn">
-            <a className="active" href="/">
-              Geners
-            </a>
-          </li>
-          <li className="sidebtn">
-            <a href="/">Trending</a>
-          </li>
-          <li className="sidebtn">
-            <a href="/">Upcoming</a>
-          </li>
-          <li className="sidebtn">
-            <a href="/">Favorites</a>
-          </li>
-        </ul>
-        <div className="creator_git_tag">
-          <ul>
-            <li>
-              <a
-                href="https://github.com/sahil4512"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Github
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
       <div className="searchbar">
         <input
           className="search_bar"
@@ -62,6 +30,7 @@ const App = () => {
           }}
         />
         <button
+          type="submit"
           className="search__button"
           onClick={(e) => searchMovies(searchTerm)}
         >
